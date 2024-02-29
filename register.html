@@ -34,9 +34,17 @@
         <div><input type="text" placeholder="Confrim Password" class="redText"></div>
         <div><input type="text" placeholder="First Name" class="redText"></div>
         <div><input type="text" placeholder="Last Name" class="redText"></div>
-        <div><button id="buttonRegister" class="redButton">Register</button></div>
-        <div><button id="buttonLogIn" class="redButton">Cancel</button></div>
-
+        <div><button id="buttonRegister" class="redButton"><a href="index.html">Register</a></button></div>
+        <div><button id="buttonLogIn" class="redButton"><a href="index.html">Cancel</a></button></div>
     </div>
+
 </body>
+<script>
+
+    let buttonLogin = document.querySelector("#buttonRegister")
+    buttonLogin.onclick = function () {
+        alert("Successful Registration")
+    }
+
+</script>
 </html>
