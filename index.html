@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Log-In Please</title>
+    <title>LogIn Page</title>
     <style>
         #divContainer {
             text-align: center;
@@ -28,13 +28,20 @@
 </head>
 <body>
     <div id="divContainer">
-        <title>Login</title>
+        <H1>Login</h1>
         <div><input type="text" placeholder="logIn" class="redText"></div>
         <div><input type="text" placeholder="Password" class="redText"></div>
         <div><button id="buttonLogIn" class="redButton">Login</button></div>
-        <div><button id="buttonPassword" class="redButton">Register</button></div>
+        <div><button id="buttonRegister" class="redButton"><a href="register.html">Register</a></button></div>
 
     </div>
-    
 </body>
+<script>
+
+    let buttonLogin = document.querySelector("#buttonLogIn")
+    buttonLogin.onclick = function () {
+        alert("Login Successful")
+    }
+
+</script>
 </html>
