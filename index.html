@@ -2,12 +2,39 @@
 <html lang="en">
 <head>
     <title>Log-In Please</title>
-
+    <style>
+        #divContainer {
+            text-align: center;
+        }
+        .redText {
+            color: purple;
+            background-color: yellow;
+            margin: 1rem;
+        }
+        .redText:hover {
+            color: yellow;
+            background-color: purple;
+        }
+        .redButton {
+            color: aqua;
+            background-color: black;
+            margin: 1rem;
+        }
+        .redButton:hover {
+            color: black;
+            background-color: pink;
+        }
+    </style>
 </head>
 <body>
-    <div><input type="text" placeholder="Username"></div>
-    <div><input type="text" placeholder="Password"></div>
-    <div><button id="buttonLogIn">Login</button></div>
-    <div><button id="buttonPassword">Password</button></div>
+    <div id="divContainer">
+        <title>Login</title>
+        <div><input type="text" placeholder="logIn" class="redText"></div>
+        <div><input type="text" placeholder="Password" class="redText"></div>
+        <div><button id="buttonLogIn" class="redButton">Login</button></div>
+        <div><button id="buttonPassword" class="redButton">Register</button></div>
+
+    </div>
+    
 </body>
 </html>
