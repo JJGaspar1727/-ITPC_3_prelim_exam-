@@ -2,18 +2,40 @@
 <html lang="en">
 <head>
     <title>Register</title>
+    <style>
+        #divContainer {
+            text-align: center;
+        }
+        .redText {
+            color: purple;
+            background-color: yellow;
+            margin: 1rem;
+        }
+        .redText:hover {
+            color: yellow;
+            background-color: purple;
+        }
+        .redButton {
+            color: aqua;
+            background-color: black;
+            margin: 1rem;
+        }
+        .redButton:hover {
+            color: black;
+            background-color: pink;
+        }
+    </style>
 </head>
 <body>
-    <div>
+    <div id="divContainer">
         <h1>Registration Page</h1>
-        <div><input type="text" placeholder="logIn"></div>
-        <div><input type="text" placeholder="Password"></div>
-        <div><input type="text" placeholder="Confrim Password"></div>
-        <div><input type="text" placeholder="First Name"></div>
-        <div><input type="text" placeholder="Last Name"></div>
-        <div><button id="buttonRegister">Register</button></div>
-        <div><button id="buttonLogIn">Cancel</button></div>
-        
+        <div><input type="text" placeholder="logIn" class="redText"></div>
+        <div><input type="text" placeholder="Password" class="redText"></div>
+        <div><input type="text" placeholder="Confrim Password" class="redText"></div>
+        <div><input type="text" placeholder="First Name" class="redText"></div>
+        <div><input type="text" placeholder="Last Name" class="redText"></div>
+        <div><button id="buttonRegister" class="redButton">Register</button></div>
+        <div><button id="buttonLogIn" class="redButton">Cancel</button></div>
 
     </div>
 </body>
